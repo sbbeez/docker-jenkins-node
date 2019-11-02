@@ -6,7 +6,7 @@ COPY ./package*.json .
 # installing all dependencies
 RUN npm ci
 # copying all the files for app
-COPY . .
+COPY ./ ./
 # building (prod) all the files
 RUN npm run build:prod
 # staring prod version of the application
