@@ -8,6 +8,6 @@ RUN npm ci
 # copying all the files for app
 COPY . .
 # building (prod) all the files
-RUN npm run build:prod
+RUN npm run build
 # staring prod version of the application
-CMD ["npm", "run", "start:prod"]
+CMD ["npm", "run", "start"]
